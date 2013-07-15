@@ -123,6 +123,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+a, a:hover {
+    text-decoration: none;
+}
+
 /* ==============
     MOBILE: Main
    ============== */
