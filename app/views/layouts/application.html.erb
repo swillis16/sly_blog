@@ -8,7 +8,26 @@
 </head>
 <body>
 
+    <div class="header-container">
+        <header class="wrapper clearfix">
+            <h1 class="title">SlyGuy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
 <%= yield %>
 
+    <div class="footer-container">
+        <footer class="wrapper">
+            <h3>Created by <a href="https://github.com/swillis16">Sylvester Willis</a></h3>
+            <h3>Since you're reading this, consider using <a href="http://www.initializr.com/">Initializr</a> as a baseline for HTML5 stuff.</h3>
+        </footer>
+    </div>
 </body>
 </html>
