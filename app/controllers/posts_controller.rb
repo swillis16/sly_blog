@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-authentication_results = http_basic_authenticate_with name: "", password: "", except: [:index, :show]
+authentication_results = http_basic_authenticate_with name: "swillis16", password: "RailsIsGood", except: [:index, :show]
 
 def index
     @posts = Post.all()
@@ -12,6 +12,7 @@ end
 
 def create 
     @post = Post.new(post_params)
+    @post.publish_date = Date.today
     
     if @post.save
         redirect_to @post
@@ -28,6 +29,7 @@ def update
     @post = Post.find(params[:id])
    
     if params.has_key?(:post)
+        @post.publish_date = Date.today
         @post.update(params[:post].permit(:title, :text))
         redirect_to @post
     else
