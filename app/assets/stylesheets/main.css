@@ -13,6 +13,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    background-color: #cdcdcd;
 }
 
 ::-moz-selection {
@@ -61,6 +62,11 @@ a:visited {
 
 .postTitle a:visited, a{
     color:#000000;
+}
+
+.content {
+    margin: auto;
+    width: 50%;
 }
 
 /* ===== Initializr Styles ==================================================
