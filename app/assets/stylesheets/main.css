@@ -49,6 +49,10 @@ textarea {
     resize: vertical;
 }
 
+header {
+    padding-top: 1em;
+}
+
 .chromeframe {
     margin: 0.2em 0;
     background: #ccc;
@@ -58,6 +62,11 @@ textarea {
 
 a:visited {
     color: #aa55aa;
+}
+
+.myGravatar {
+    float: left;
+    margin-right: 1em;
 }
 
 .postTitle a:visited, a{
