@@ -75,7 +75,11 @@ a:visited {
 
 .content {
     margin: auto;
-    width: 50%;
+    width: 70%;
+}
+
+.commentsTable {
+    width: 100%;
 }
 
 /* ===== Initializr Styles ==================================================
