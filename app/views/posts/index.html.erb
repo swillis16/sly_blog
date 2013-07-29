@@ -1,8 +1,10 @@
-<% @posts.each do |post|%>
-    <h2 class="postTitle"><%= link_to post.title.html_safe, post_path(post) %></h2>
-    <p><%= post.text.html_safe %></p>
-    Publish date: <%= post.publish_date %><br />
-    <% if post != @posts.last%>
-        <hr />
+<div class="content">
+    <% @posts.each do |post|%>
+        <h2 class="postTitle"><%= link_to post.title.html_safe, post_path(post) %></h2>
+        <p><%= post.text.html_safe %></p>
+        Publish date: <%= post.publish_date %><br />
+        <% if post != @posts.last%>
+            <hr />
+        <% end %>
     <% end %>
-<% end %>
+</div>
