@@ -1,4 +1,9 @@
 SlyBlog::Application.routes.draw do
+  get 'portfolio/index'
+  get 'portfolio' => 'portfolio#index'
+
+  get 'resume/index'
+  get 'resume' => 'resume#index'
   # get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

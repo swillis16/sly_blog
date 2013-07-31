@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SlyGuy[:webGuy]</title>
+  <title>SlyGuy</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -11,12 +11,12 @@
     <div class="header-container">
         <header class="wrapper clearfix">
             <img class="myGravatar" src="https://secure.gravatar.com/avatar/<%= @emailHash %>" />
-            <h1 class="title">SlyGuy[:webGuy]</h1>
+            <h1 class="title">SlyGuy</h1>
             <nav>
                 <ul>
                     <li><%= link_to "Blog", controller: "posts" %></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><%= link_to "Resume", controller: "resume" %></li>
+                    <li><%= link_to "Portfolio", controller: "portfolio" %></li>
                 </ul>
             </nav>
         </header>
@@ -26,8 +26,11 @@
 
     <div class="footer-container">
         <footer class="wrapper">
-            <h3>Created by <a href="https://github.com/swillis16">Sylvester Willis</a></h3>
-            <h3>Since you're reading this, consider using <a href="http://www.initializr.com/">Initializr</a> as a baseline for HTML5 stuff.</h3>
+            <h3>
+                Created by <a href="https://github.com/swillis16">Sylvester Willis</a> 
+                using <a href="http://www.initializr.com/">Initializr</a>
+                and <a href="http://sampleresumetemplate.net/">Sample Resume Template</a>.
+            </h3>
         </footer>
     </div>
 </body>
