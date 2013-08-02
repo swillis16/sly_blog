@@ -1,0 +1,5 @@
+#!/app/bin/ruby
+#!/usr/bin/env ruby1.9.1
+require_relative '../config/boot'
+require 'rake'
+Rake.application.run
