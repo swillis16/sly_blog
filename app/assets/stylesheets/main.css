@@ -46,6 +46,7 @@ fieldset {
 }
 
 textarea {
+    width: 25%;
 }
 
 header {
@@ -68,8 +69,8 @@ a:visited {
     margin-right: 1em;
 }
 
-.postTitle a:visited, a{
-    color:#000000;
+.postTitleLink a, a:visited {
+    color: #000000;
 }
 
 .content {
